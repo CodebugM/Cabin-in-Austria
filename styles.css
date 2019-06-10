@@ -3,7 +3,6 @@ body {
 }
 
 /* Top row incl. the phone number and the book button */
-
 .top-row {
   background-color: #fff;
   height: 20px;
@@ -30,31 +29,88 @@ body {
 
 /* Navbar */
 nav {
-  margin-top: 20px; /* same as height of top-row */
+  margin-top: 20px;
+  /* same as height of top-row */
+  z-index: 0;
 }
 
 /* .navbar .navbar-expand-lg .navbar-light .bg-light {
   background-color: #1E434C;
 } */
-
 .bg-light {
-    background-color: #1E434C !important;
-  }
+  background-color: #1E434C !important;
+}
 
-  .navbar-light .navbar-brand {
-    color: #fff;
-  }
+.navbar-light .navbar-brand {
+  color: #fff;
+}
 
-  .nav-item {
-    padding: 0;
-  }
+.nav-item {
+  padding: 0;
+}
 
-  .navbar-light .navbar-nav .nav-link {
-    color: #fff;
-    font-family: 'Crimson Text';
-    font-size: 1.5rem;
-  }
+.navbar-light .navbar-nav .nav-link {
+  color: antiquewhite;
+  font-family: 'Crimson Text';
+  font-size: 1.5rem;
+}
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #8D230F;
+  color: antiquewhite;
+  text-decoration: underline;
+}
+
+/* removes border around three line menu */
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+  color: antiquewhite;
+  text-decoration: underline overline;
+}
+
+.logo-image img {
+  height: 60px;
+}
+
+/* *  PARALLAX * */
+
+.parallax1 {
+  /* The image used */
+  background-image: url("images/marian-kroell-1311507-unsplash.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("images/paul-gilmore-94190-unsplash.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-div {
+  background: linear-gradient(#1E434C, #053f24);
+  background: #053f24;
+  color: antiquewhite;
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+  padding: 2% 15% 4%;
+  text-align: center;
+  line-height: 1.5em;
 }
